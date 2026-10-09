@@ -1,7 +1,8 @@
 {
   "name": "@tummycrypt/tinyland-analytics-data",
   "version": "0.2.2",
-  "description": "Analytics data service for Loki-backed page view and session metrics",
+  "private": true,
+  "description": "RETIRED: merged into @tummycrypt/tinyland-otel/analytics-data (tummycrypt_tinyland_otel 1.1.0+)",
   "type": "module",
   "license": "Zlib AND LicenseRef-Tinyland-Proprietary",
   "main": "./dist/index.js",
@@ -25,13 +26,12 @@
     "test:watch": "vitest",
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "pnpm build && pnpm check:package",
     "check:package": "publint"
   },
   "author": "Tinyland.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinyland-inc/tinyland-analytics-data.git"
+    "url": "git+https://github.com/xoxd-ai/tinyland-analytics-data.git"
   },
   "dependencies": {},
   "devDependencies": {
@@ -43,13 +43,9 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
   "packageManager": "pnpm@10.13.1",
-  "homepage": "https://github.com/tinyland-inc/tinyland-analytics-data",
+  "homepage": "https://github.com/xoxd-ai/tinyland-otel",
   "bugs": {
-    "url": "https://github.com/tinyland-inc/tinyland-analytics-data/issues"
+    "url": "https://github.com/xoxd-ai/tinyland-otel/issues"
   }
 }
